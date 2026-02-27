@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documento</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+
+
+  
+</head>
+
+<body>
+  <!-- Informacion -->
+
+  <div class="card mx-5 mt-3" id="resolucion-form">
+    <div class="container">
+      <div class="card-header">
+        <h1 class="text-center my-2">Rellenar Formulario para completar Resolucion</h1>
+
+        <title>Botón con texto oculto</title>
+        <style>
+            .boton {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                margin-left: 40%;
+            }
+    
+            .texto-oculto {
+                display: none;
+                color: rgb(0, 0, 0);
+                background-color: rgb(255, 255, 255);
+                border-radius: 5px;
+                
+            }
+            .boton-whatsapp{
+              color: blue;
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        <button class="boton" onclick="mostrarOcultarTexto()">¿De que trata esto? "Hacer click" </Hacer></button>
+        <span class="texto-oculto">
+          
+          &#9679; Automatización: El programa elimina la necesidad de imprimir resoluciones exentas manualmente, ahorrándote tiempo y esfuerzo. <br>
+          &#9679; Eficiencia: El programa puede imprimir resoluciones exentas mucho más rápido que una persona. <br>
+          &#9679; Precisión: El programa imprime las resoluciones exentas tal y como están en el archivo original, sin errores ni omisiones. <br>
+          &#9679; Escalabilidad: El programa puede adaptarse para imprimir resoluciones exentas de un gran número de planillas. <br>
+          <p>Nota: "Este Programa Web es solo un Prototipo, aun no esta Terminado por Completo". Atte: 
+            <a href="https://wa.me/+56966539590/?text=buenos%20dias!" class="boton-whatsapp">Juan Pablo </a>
+
+          </p>
+        </span>
+    
+        <script>
+            var estaOculto = true; // Variable para controlar el estado (oculto/visible)
+    
+            function mostrarOcultarTexto() {
+                var textoOculto = document.querySelector('.texto-oculto');
+                if (estaOculto) {
+                    textoOculto.style.display = 'block';
+                    estaOculto = false; // Se cambia el estado a visible
+                    this.textContent = "Ocultar texto"; // Se cambia el texto del botón
+                } else {
+                    textoOculto.style.display = 'none';
+                    estaOculto = true; // Se cambia el estado a oculto
+                    this.textContent = "Mostrar texto"; // Se cambia el texto del botón
+                }
+            }
+        </script>
+
+
+
+      </div>
+      <div class="card-body">
+        <div class="contain">
+          <div class="row">
+             <div class="col-md-6">
+
+             <form action="tabla.php" method="post">
+              <!-- primera columna -->
+        
+                
+              <div class="form-group mt-2">
+                <label for="fechaConvenio1">1) Fecha Convenio: </label>
+                <input type="date" id="fechaConvenio1" name="fechaConvenio1" placeholder="Ingrese fecha" class="form-control" required />
+              </div>
+
+              <div class="form-group" >
+                <label for="nameField">2) Nombre Unidad Tecnica</label>
+                <input type="text" id="nameField" name="nameField" placeholder="Ingrese Titulo" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="nombreProyecto">3) Nombre Proyecto</label>
+                <input type="text" name="nombreProyecto" id="nombreProyecto" placeholder="Ingrese Nombre Proyecto" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="Subtitulo">4) Subtitulo</label>
+                <input type="text" id="Subtitulo" name="Subtitulo" placeholder="Ingrese Subtitulo" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="nuevoItem">5) ITEM</label>
+                <input type="number" id="nuevoItem" name="nuevoItem" placeholder="Ingrese Codigo Bip" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="nombreSubtitulo">6) Nombre Subtitulo </label>
+                <input type="text" id="nombreSubtitulo" name="nombreSubtitulo" placeholder="Nombre subtitulo" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="codigoBip">7) Codigo Bip </label>
+                <input type="text" id="codigoBip" name="codigoBip" placeholder="Codigo Bip" class="form-control" />
+              </div>
+              <div class="form-group mt-2">
+                <label for="numeroResolucion">8) Numero Resolucion </label>
+                <input type="text" id="numeroResolucion" name="numeroResolucion" placeholder="Numero" class="form-control" />
+              </div>
+
+              
+              <div class="form-group mt-2">
+                <label for="fechaResolucion">9) Fecha resolucion: </label>
+                <input type="date" id="fechaResolucion" name="fechaResolucion" format="dd-mm-aaaa"  placeholder="Ingrese fecha" class="form-control" required />
+              
+              </div>
+              <div class="form-group mt-2">
+                <label for="nombreProveedor">10) Nombre Provedor</label>
+                <input type="text" id="nombreProveedor" name="nombreProveedor" placeholder="Ingrese Nombre Proveedor" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="numeroFactura">11) Numero Factura</label>
+                <input type="number" id="numeroFactura" name="numeroFactura" placeholder="Numero Factura" class="form-control" />
+              </div>
+
+
+              <div class="form-group mt-2">
+                <label for="fechaFact">12) Fecha factura</label>
+                <input type="date" id="fechaFact" name="fechaFact"  placeholder="Ingrese Fecha" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="montoFactura">13) Monto $</label>
+                <input type="number" id="montoFactura" name="montoFactura" placeholder="Monto" class="form-control" step="0.01"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '.');">
+              </div>
+
+
+              <!--  Fin del primer Formulario -->
+
+
+              <!--  Inicio del Segundo Formulario -->
+
+            </div>
+            <div class="form2">
+              <div class="form-group mt-2">
+                <label for="fechaActaProclamacion">14) Fecha Acta Proclamacion</label>
+                <input type="date" id="fechaActaProclamacion" name="fechaActaProclamacion" placeholder="Ingrese Fecha Actas" class="form-control" />
+              </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+              <div class="form-group mt-2">
+                <label for="nombreGobernador">15) Nombre Gobernador</label>
+                <input type="text" id="nombreGobernador" name="nombreGobernador" placeholder="Nombre del Gobernador" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="nombreUnidad2">16) Nombre Unidad Tecnica 2</label>
+                <input type="text" id="nombreUnidad2" name="nombreUnidad2" placeholder="Nueva Unidad Tecnica" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="rutUnidad2">17) Rut Unidad Tecnica</label>
+                <input type="text" id="rutUnidad2" name="rutUnidad2" placeholder="Ingrese Rut" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="direccion">18) Direccion</label>
+                <input type="text" id="direccion" name="direccion"  placeholder="Ingrese Cargo" class="form-control" />
+              </div>
+
+              
+              <div class="form-group mt-2">
+                <label for="cargo">19) Cargo</label>
+                <input type="text" id="cargo" name="cargo"  placeholder="Ingrese Cargo" class="form-control" />
+              </div> 
+
+              <div class="form-group mt-2">
+                <label for="abreviatura">20) Abrev</label>
+                <input type="text" id="abreviatura" name="abreviatura" placeholder="Ingrese Abreviatura" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="nombreAutoridad">21) Nombre Autoridad</label>
+                <input type="text" id="nombreAutoridad" name="nombreAutoridad" placeholder="Nombre Autoridad" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="numeroFactura">22) Numero Factura</label>
+                <input type="text" id="numeroFactura" name="numeroFactura" placeholder="Numero Facturas" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="fechaFactura">23) Fecha Factura</label>
+                <input type="date" id="fechaFactura" name="fechaFactura" placeholder="Seleccione Fecha" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="montoFactura2">24) Monto $</label>
+                <input type="text" id="montoFactura2" name="montoFactura2" placeholder="Montos" class="form-control" />
+              </div>
+
+              <div class="form-group mt-2">
+                <label for="nombreProveedor2">25) Nombre Proveedor 2</label>
+                <input type="text" id="nombreProveedor2" name="nombreProveedor2" placeholder="Nombre UT" class="form-control" />
+              </div>
+
+             
+             
+
+
+              <!--  Fin del Segundo Formulario -->
+              <!-- Inicio Tabla de Formulario -->
+
+
+              <!-- Fin de Tabla Formulario por favor no mover CSS-->
+
+            </div>
+
+          
+          </div>
+          
+          <div class="container-table">
+
+          
+          <div class="table">
+          
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>26) CANT.</th>
+                    <th>27) ARTÍCULO</th>
+                    <th>28) MODELO</th>
+                    <th>29) MARCA</th>
+                    <th>30) N. MOTOR</th>
+                    <th>31) N. VIN</th>
+                    <th>32) COLOR</th>
+                    <th>33) AÑO</th>
+                    <th>34) PATENTE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+
+                      <input id="cantidad_articulos" type="number" name="cantidad_articulos" placeholder="CANTIDAD_ARTICULOS" required></td>
+                    <td>
+                      <input id="nombre_articulo" type="text" name="nombre_articulo" placeholder="Nombre articulo" required></td>
+                    <td>
+                      <input id="modelo" type="text" name="modelo" placeholder="MODELO" required></td>
+                    <td>
+                      <input id="marca" type="text" name="marca" placeholder="MARCA" required></td>
+                    <td>
+                      <input id="n_motor" type="text" name="n_motor" placeholder="MOTOR" required></td>
+                    <td>
+                      <input id="n_vin" type="text" name="n_vin" placeholder="N_VIN" required></td>
+                    <td>
+                      <input id="color" type="text" name="color" placeholder="COLOR" required></td>
+                    <td>
+                      <input id="año" type="number" name="año" placeholder="AÑO" required></td>
+                    <td>
+                      <input id="placa_patente" type="text" name="placa_patente" placeholder="PLACA_PATENTE" required></td>
+                  </tr>
+                </tbody>
+              </table>
+           
+            </form>
+          </div>
+          
+          <div class="container text-center">
+            <button onclick="generarDocumento()" class="btn btn-primary btn-lg">
+              Generar Documento
+            </button>
+          </div>
+
+        </div>
+            <!-- Fin del tabla -->
+
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+     
+
+
+    </div>
+
+
+
+    
+  </div>
+
+  </div>
+
+  <!--Carta de Presentacion o Oficio  -->
+
+
+  <div class="resolucion" id="resolucion-template">
+    
+
+    <!-- contenedor -->
+    <div class="container">
+      
+      <!--lado Izquierdo  de un documento -->
+
+     
+        <!-- Texto para Rellenar -->
+
+        <div class="text">
+         
+          <div class="txtImpreso1">
+            <div class="logo">
+              <img src="img/logo_gore_core_horizontal_color.png"  width="300" height="65">
+          
+            <p class="titulo">RESOLUCION EXENTA N°_
+              <BR>TRANSFIERE BIENES QUE INDICA</BR> </p>
+           
+
+          <!-- Ingrese un nuevo Nombre -->
+        
+            a) El Convenio-Mandato de <span id="fech">Primera Fecha</span> , suscrito entre este Gobierno Regional y la <span id="nName">"Nombre Unidad Tecnica"</span>, por el cual se encomendo a este municipio,
+            la ejecucion del proyecto <span id="nP">"Nombre Proyecto"</span>
+            correspondiente al Subt.<span id="sub">"Sub"</span>.<span id="item">"ITEM"</span>
+            <span id="nomsub">"Nombre Subtitulo"</span>, del presupuesto Fondo Nacional Desarrollo Regional
+            (FNDR), identificado presupuestariamente con el Codigo BIP
+            <span id="Bip">"Codigo Bip"</span> aprobado por Resolucion Afecta N° <span id="res">"numero de resolucion"</span>
+            de fecha <span id="fres">"ingrese fecha"</span>, de este Gobierno Regional, por la que se aprueba el 
+            convenio indicado;<br>
+            b) la factura de <span id="pro">"Nombre Proveedor"</span>
+            Nº<span id="nfac">"Numero Factura"</span>
+            de fecha <span id="ffac">"Fecha Factura"</span>
+            por la suma de <span id="mon">"Monto"</span>
+            a nombre de Gobierno Regional de los Lagos, que 
+            corresponde a adquisicion de bienes que mas adelante
+            se indica ;<br>
+            c) La Resol. Exenta N° 7/2019, del Contraloria General de la Republica; y 
+            d) La Sentencia y Acta de Proclamacion del Tribunal Calificador de Elecciones
+            de fecha <span id="facta">"Fecha Acta Proclamacion"</span> mediante el cual se proclama
+            como Gobernador Regional a don <span id="gober">"Nombre Gobernador"</span>;
+            e) Las Facultades que me confiere el DFL 1-19.175, que fija el texto refundido
+            coordinado y sistematizado de la LOC sobre Gobierno Regional y 
+            Admnistracion Regional, especialmente lo dispuesto en el art.70 letra f).<br>
+              
+            <H5 class="title">R E S U E L V O:</H5>
+<!---------------------------------------------------------------------------------------------------------------->
+          <ul>
+            <li>
+              <span class="icon"><i class="" aria-hidden="true"></i></span>
+            
+                <p>
+                  1.- TRANSFIERASE, a la Ilustre, <span id="nuevaU">"Nombre Unidad"</span>,
+                  RUT <span id="rut2"></span>, con domicilio en calle <span id="dir">"Direccion"</span> ,
+                  de esa comuna , representada por su <span id="carg">"Cargo"</span>, 
+                  <span id="abrev">"Abreviatura"</span>, <span id="nomaut">"Nombre Autoridad"</span> para el
+                  funcionamiento dentro de la comuna, a fin de prestar los servicios propios de la 
+                  la institucion, los bienes de acuerdo al proyecto identificado en los vistos
+                  a), de esta resolucion, se encuentra individualizado en la siguiente factura: N° 
+                  <span id="numfac2">"Numero Factura"</span> de fecha <span id="fechaF">"Fecha Factura"</span> 
+                  de monto <span id="montoF">"Monto Factura"</span>del Proveedor
+                  <span id="prov2">"Nombre Proveedor"</span>
+                  
+                  
+                  
+              <table>
+                <thead>
+                    <tr>
+                        <th>CANT.</th>
+                        <th>ARTICULO</th>
+                        <th>MODELO</th>
+                        <th>MARCA</th>
+                        <th>N° MOTOR</th>
+                        <th>NO VIN</th>
+                        <th>COLOR</th>
+                        <th>AÑO</th>
+                        <th>PATENTE</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td> <span id="cA">"cantidad Articulo"</span></td>
+                        <td><span id="A">"Motor de combustión interna"</span></td>
+                        <td><span id="moD">"ABC123"</span></td>
+                        <td><span id="Ma">"XYZ"</span></td>
+                        <td><span id="nunM">"123456789"</span></td>
+                        <td><span id="nV">"V123456789"</span></td>
+                        <td><span id="Col">"Rojo"</span></td>
+                        <td><span id="Añ">"2024"</span></td>
+                        <td><span id="PlacP">"DEF456"</span></td>
+                        
+                    </tr>
+                    
+                   
+                </tbody>
+            </table>
+                </p>
+              </div>
+
+    
+          
+
+
+
+      <!--el lado derecho -->
+     
+
+
+     
+    </div>
+    
+  
+  
+
+
+  <!-- imprimir a pdf -->
+
+  
+  <button type="button" id="printButton" class="btn btn-primary" onclick="printRE()">Imprimir Resolución</button>
+
+  <p class="info"  >Apretar F5 para Imprimir nuevo Documento si el anterior boton desaparece</p>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script>
+
+    window.onafterprint = function() {
+        // Restaura el estado original después de imprimir
+        document.getElementById("resolucion-form").style.display = "block";
+        document.getElementById("resolucion-template").style.display = "none";
+        document.getElementById("btnN").style.display = "block";
+    };
+</script>
+
+</body>
+
+</html>

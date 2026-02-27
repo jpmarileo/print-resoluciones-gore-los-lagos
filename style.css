@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: 'poppins', sans-serif;
+ 
+}
+
+
+.info{
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.btn-lg{
+
+  text-align: center;
+}
+
+.btn {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #020202;
+  text-decoration: none;
+}
+
+.h4,
+h4 {
+  font-size: calc(10px + .4vw);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1;
+ 
+}
+
+
+
+
+
+.printRE {
+  font-size: 30px;
+  color: #fff;
+  background-color: #2b428d;
+
+  
+}
+
+
+.txtImpreso1{
+  background-color: #ffffff;
+  padding: 20px;
+  width: 210mm; /* Ancho de una hoja folio (en mm) */
+  height: 250mm; /* Alto de una hoja folio (en mm) */
+  justify-content: center;
+  display: flex;
+
+  margin-left: 20%;
+  font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+
+
+
+}
+
+.btn-primary{
+  margin-top: 20px;
+  margin-left: 45%;
+}
+
+
+
+.txtImpreso1 .titulo{
+  margin-left: 45%
+
+}
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 3px solid #3305ff36;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+
+
+
+.resolucion .text span {
+  font-size: .7em;
+  font-weight: 600;
+  color: #3b06f8;
+  font-size: 14px;
+  
+}
+
+
+
+.resolucion .info {
+  padding-top: 40px;
+}
+
+
+
+.info ul {
+  position: relative;
+}
+
+.resolucion .info #fFacebook,
+.resolucion .info #lLinkedin {
+  cursor: pointer;
+}
+
+.resolucion .info ul li {
+  list-style: none;
+  position: relative;
+  margin: 10px 0px;
+}
+
+.resolucion .info ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.resolucion .info ul li span {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+
+.resolucion .edu li {
+  margin-bottom: 15px;
+  list-style: square;
+  color: #03a9f4;
+}
+
+
+/* .resolucion .edu h5 {
+    color: #03a9f4;
+    font-weight: 500;
+    text-transform: uppercase;
+} */
+
+.resolucion .edu p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1em;
+}
+
+
+/* 
+.resolucion .edu h3 {
+    color: #fff;
+    font-weight: 300;
+} */
+
+.resolucion .lang {
+  margin-top: 30px;
+}
+
+.resolucion .lang li {
+  list-style: square;
+  color: #03a9f4;
+  padding: 10px;
+}
+
+.resolucion .lang li span {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+/* about */
+.text-center {
+color: #ffffff;
+}
+
+
+
+/* inputs */
+
+.resolucion .data {
+  min-height: 600;
+  background-color: #fff;
+  width: 100%;
+  margin: 50px;
+}
+
+.resolucion .data input {
+  width: 90%;
+  height: 90px;
+  margin: 5px 6px;
+  padding: 0 5px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.resolucion .data .submit {
+  height: 30px;
+  width: 100% ;
+  cursor: pointer;
+}
+
+.resolucion .data h4 {
+  text-transform: uppercase;
+  font-weight: 1em;
+  color: #1a6283;
+}
+
+.btnN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: 0.5 all ease-in-out;
+  width: 300px;
+}
+
+.printRE:hover {
+  color: #fff;
+  letter-spacing: 1px;
+  width: 300px;
+}
+
+
+.row .col-md-6 {
+  flex: 0 0 auto;
+  width: 50%;
+  color: #fff;
+  border-radius: 20px 0px 0px 20px;
+  padding: 20px;
+ 
+ 
+}
+
+
+       .row{
+        
+        border: 5px rgba(255, 255, 255, 0.521) solid;
+        border-radius: 20px;
+        box-shadow: 13px 13px 22px 1px #000000;
+        height: 1100px;
+       }
+
+.form2{
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 35px 55px rgb(0, 0, 0, .1);
+  border-radius: 0px 20px 20px 0px;
+
+}
+
+.container{
+  padding: 5rem 2rem 2rem;
+
+ 
+
+  font-family: sans-serif;
+
+
+}
+
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  overflow: hidden;
+  width: 100%;
+  margin: 50px auto;
+  box-shadow: 13px 13px 22px 1px #000000;
+
+   background-color: #ffffff;
+        border: 5px rgba(255, 255, 255, 0.521) solid;
+        border-radius: 10px;
+
+
+
+
+}
+
+.content-table thead tr {
+  background-color: #1e9aff;
+  color: #ffffff;
+
+  font-weight: bold;
+}
+
+
+.content-table td {
+  padding: 30px 15px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 600;
+  max-width: 118px;   
+}
+
+.content-table th{
+
+padding: 12px 15px;
+background-color: #29163f;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #29163f;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #000000;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.txtImpreso{
+color: #000000;
+
+}
+
+.card-body {
+ 
+  padding: 6rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color:white;
+ 
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+
+
+}
+
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+
+
+mt-3  .mt-{
+  background-color: #1e0783;
+
+}
+
+.mx-5{
+
+  background-image: url(img/puerto\ montt\ 4k.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-lg {
+  margin-left: auto;
+  width: inherit;
+  height: 75px;
+  font-size: x-large;
+
+
+
+}
+
+
+
+
+
+
+
+.container-table{
+  max-width: fit-content;
+  border-radius: 5%;
+  margin: 0 auto;
+
+}
+
+.tbody, .tr, .td{
+  max-width: 10%;
+
+
+  }
+
+  tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 2px;
+
+  }
+
+  buttons, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    
+   
+}
+
+input{
+  width: 90px;
+  height: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+th, td {
+  text-align: left;
+  padding: 4px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.botton-oculto{
+  justify-content: center;
+}
+
